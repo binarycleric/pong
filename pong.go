@@ -22,7 +22,7 @@ func main() {
 
 	log.SetOutput(os.Stdout)
 	http.HandleFunc("/", pong)
-	fmt.Println("listening...")
+	fmt.Println("listening on port " + port)
 
 	err := http.ListenAndServe(":"+port, nil)
 	if err != nil {
