@@ -1,1 +1,1 @@
-web: ./pong
+web: pong
